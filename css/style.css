@@ -1,9 +1,7 @@
-
 #digital-clock {
  background-color: darkblue;
  color: rgb(99, 12, 12)
  width: 35%;
- margin: auto;
  padding-top: 20px;
  padding-bottom: 20px;
  padding-left: 20px;
@@ -23,9 +21,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    object-position: 3in;
+    background-color: dimgrey;
 }
 
 .button  {
+    position: relative;
     font-weight: bold;
     border-radius: 15px;
     border: none;
@@ -34,6 +35,7 @@
     margin-left: 4px;
     align-items: center;
     cursor: pointer;
+    background-color: darkblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }    
 
