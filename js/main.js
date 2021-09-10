@@ -25,9 +25,9 @@ function Time() {
  minute = update(minute); // Updating hour, minute, and second
  second = update(second); // if they are less than 10
  
- document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period; // Adding time elements to the div
+ document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period; // Adds time elements to the div
  
- setTimeout(Time, 1000); // Set Timer to 1 sec (1000 ms)
+ setTimeout(Time, 1000); // Set Timer to 1 sec (1000 milliseconds)
 }
  // Function to update time elements if they are less than 10
  // Append 0 before time elements if they are less than 10
