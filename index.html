@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <title>Digital Alarm Clock</title>
-    <link rel ="stylesheet" href="style.css">
+        <meta charset="utf-8">
+         <link rel ="stylesheet" href="./css/style.css">
+         <meta name="viewport" content="width=,initial-scale="/>
+         <title>Digital Alarm Clock</title>
     </head>
-
-<body>
-
-<div id="digital-clock"></div>
-<script src="main.js"></script>
- 
-</body>   
+        <body>
+            <section class="container">
+            <div id="digital-clock"></div>
+            <div id="date"></div>
+            <input onchange="setAlarmTime(this.value)" id="alarmTime" type="datetime-local">
+            <div class="Controls">
+                <button onClick="setAlarm()" class="button set-alarm">Set Alarm</button>
+                <button onClick="clearAlarm()" class="button clear-alarm">Clear Alarm</button>
+            </div>
+             </section>  
+           
+             <script src="./js/main.js"></script>
+            
+        </body>   
 </html>
 
 
