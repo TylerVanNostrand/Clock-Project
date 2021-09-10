@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 #digital-clock {
- background-color: #66ffff;
+ background-color: darkblue;
  width: 35%;
  margin: auto;
  padding-top: 50px;
@@ -32,3 +32,9 @@
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }    
+
+.controls  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
