@@ -48,3 +48,25 @@ Time();
 
 var alarmTime = null; // sets value of alarmTime to 0
 var alarmTimeout = null; // sets value of alarmTimeout to 0
+
+function setAlarmTime(value)    {
+    alarmTime = value;
+    console.log(alarmTime);
+};
+function setAlarm() {
+    if(alarmTime)   { // Will only run if an alarm time is set
+        var current = new Date; // sets variable to current date and time
+        var timeToAlarm = new Date (alarmTime); // Sets the variable timeToAlarm to the date and time of alarmTime
+    };
+    if(timeToAlarm > current)   {
+        var timeout = timeToAlarm.getTime() - current.getTime(); // Sets a variable for the timeout
+        alarmTimeout = setTimeout(() => alert("Time for school!"), timeout); // Sends alert with timeout variable set
+        alert("Alarm Set."); // Alerts you that alarm is set
+    };
+};
+function clearAlarm()   {
+    if(alarmTimeout)    {
+        clearTimeout(alarmTimeout); // Clears timeOut of alarmTimeout variable
+        alert("Cleared Alarm."); // Let's you know alarm was cleared
+    };
+};
